@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { motion } from "framer-motion";
+
+import fotoPrincipal from "../src/images/foto-principal.png";
+import dom from "../src/images/dom.jpg";
+import marie from "../src/images/marie.jpg";
+import capitu from "../src/images/capitu.jpg";
+
+const images = [fotoPrincipal, dom, marie, capitu];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <motion.div className="carousel">
+        <motion.div className="inner">
+          {images.map((image) => (
+            <motion.div className="item" key={image}>
+              <img src={image} alt="Texto alt" />
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
