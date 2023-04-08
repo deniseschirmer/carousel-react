@@ -5,7 +5,7 @@
 ## Demo 📸
 
 <div align="center" >
-   <img src="./github/" alt="demo-mobile" height="425">
+   <img src="./github/carousel.gif" alt="demo-mobile" height="425">
 </div>
  ---
 
@@ -13,7 +13,7 @@
 
 O Projeto carousel foi desenvolvido para aprendizado com uso da biblioteca framer-motion.
 
-### Link do projeto:
+### Link do projeto: https://carousel-reactjs.netlify.app/
 
 ### 🛠 Tecnologias
 
